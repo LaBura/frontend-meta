@@ -1,0 +1,20 @@
+.mobileCursor {
+  position: fixed;
+  left: 10px;
+  z-index: 99;
+  top: 100px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid green;
+}
+.mobileCursorIcon {
+  width: 80px;
+  @media only screen and (max-width: 768px) {
+    width: 20px;
+  }
+}

@@ -1,0 +1,110 @@
+.friends {
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+  top: 100px;
+  width: 300px;
+}
+.friendsContent {
+  background-image: url("../../assets/wood.jpg");
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 10px;
+  height: 350px;
+}
+.friendAvatar {
+  height: 50px;
+  width: 50px;
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+    width: 40px;
+  }
+}
+.friendsIcon {
+  margin-left: auto;
+  width: 60px;
+  height: 60px;
+
+  @media only screen and (max-width: 768px) {
+    height: 40px;
+    width: 40px;
+  }
+  transition: all 0.3s ease-out;
+}
+.searchInputContainer {
+  margin: 5px 12px;
+  display: flex;
+  flex-direction: row;
+}
+.inputSearch {
+  height: 30px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  // margin-bottom: 10px;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.searchResult {
+  height: fit-content;
+  width: 100%;
+  display: block;
+}
+
+.titleHistory {
+  margin: 0px 12px;
+  margin-top: 10px;
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+}
+.simpleBarFriends {
+  max-height: 210px !important;
+  padding-top: 50px;
+}
+.friend {
+  height: 60px;
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  border-radius: 15px;
+  border: 3px solid rgb(223, 133, 52);
+  align-items: center;
+}
+.friendId {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.ModalOpen {
+  animation: openModal 0.4s ease-out forwards;
+}
+.ModalClosed {
+  animation: closeModal 0.4s ease-out forwards;
+}
+.notFound {
+  height: 60px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+@keyframes openModal {
+  0% {
+    transform: translateX(-240px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes closeModal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-240px);
+  }
+}

@@ -1,0 +1,216 @@
+.itemShopContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.closeIconShop {
+  height: 40px;
+  z-index: 12;
+  width: auto;
+  @media only screen and (max-width: 768px) {
+    height: 30px;
+  }
+}
+
+.backIconShop {
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  z-index: 12;
+  width: auto;
+  @media only screen and (max-width: 768px) {
+    height: 30px;
+  }
+}
+
+.simpleBarShop {
+  max-height: 500px;
+  padding-top: 50px;
+}
+
+.itemShop {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.itemPurchase {
+  position: absolute;
+  height: 100%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.seedboxrare {
+  animation: boxrare 2s infinite;
+}
+
+.waterIcon,
+.pesticidesIcon {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  display: inline-block;
+}
+
+.seedboxnormal,
+.seedboxrare {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.4);
+  margin: 10px 40px;
+  border-radius: 25px;
+  padding: 15px 20px;
+  font-size: 14px;
+  @media only screen and (max-width: 768px) {
+    padding: 5px 10px;
+  }
+}
+
+.waterLabel,
+.pesticidesLabel {
+  color: white;
+  font-size: 18px;
+}
+
+.waterInput,
+.pesticidesInput {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  border: 3px solid #5a8f9e;
+  width: 200px;
+  font-family: Cookie;
+  @media only screen and (max-width: 768px) {
+    width: 100px;
+  }
+}
+
+.seedboxnormal {
+  animation: boxnormal 2s infinite;
+}
+
+.seedboxnormalImg,
+.seedboxrareImg {
+  width: 100px;
+  height: 100px;
+  font-size: 16px;
+  margin: 20px;
+  @media only screen and (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    font-size: 14px;
+  }
+}
+
+.genes {
+  width: 25px;
+  height: auto;
+  margin: 10px;
+  display: inline-block;
+}
+
+.itemBought {
+  position: relative;
+  width: 260px;
+  height: 358px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  left: 50%;
+  transform: translate(-50%, 10%);
+  @media only screen and (max-width: 768px) {
+    // height: 310px;
+    scale: 0.8;
+    left: -2px;
+    transform: none;
+    // top: 30px;
+  }
+}
+
+.itemBoughtName {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.itemBoughtPlantLand {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  top: 80px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.genesContainer {
+  width: 220px;
+  height: auto;
+  position: absolute;
+  top: 250px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  @media only screen and (max-width: 768px) {
+    top: 225px;
+  }
+}
+
+.plantStars {
+  flex-direction: row;
+  display: flex;
+  position: absolute;
+  top: 315px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  @media only screen and (max-width: 768px) {
+    top: 315px;
+  }
+}
+
+.plantStar {
+  width: 20px;
+  margin: 0 5px;
+}
+
+.itemBoughtContainer {
+  position: absolute;
+  height: 100%;
+  display: flex;
+  width: 100%;
+}
+
+@keyframes boxrare {
+  0% {
+    box-shadow: 0px 0px 60px rgba(121, 80, 234, 1);
+  }
+  50% {
+    box-shadow: 0px 0px 10px rgba(121, 80, 234, 1);
+  }
+  100% {
+    box-shadow: 0px 0px 60px rgba(121, 80, 234, 1);
+  }
+}
+
+@keyframes boxnormal {
+  0% {
+    box-shadow: 0px 0px 60px #886565;
+  }
+  50% {
+    box-shadow: 0px 0px 10px #886565;
+  }
+  100% {
+    box-shadow: 0px 0px 60px #886565;
+  }
+}

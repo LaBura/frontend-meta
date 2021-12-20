@@ -1,0 +1,96 @@
+.auth {
+  background-image: url(../../assets/wood.jpg) !important;
+  background-repeat: round;
+  background-size: cover;
+  width: 550px;
+  height: 450px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10%;
+  flex-direction: column;
+  display: flex;
+  @media only screen and (max-width: 768px) {
+    width: 340px;
+    height: 380px;
+  }
+}
+.authtitle {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  font-size: 22px;
+  color: #ffffff;
+}
+.authcontent {
+  position: absolute;
+  top: 53%;
+  left: 0%;
+  transform: translate(0%, -50%);
+  width: 100%;
+}
+.inputauthcontainer {
+  width: 400px;
+  border-radius: 10px;
+  border: none;
+  margin: auto;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 5px 10px;
+  @media only screen and (max-width: 768px) {
+    width: 280px;
+  }
+}
+.passwordContainer {
+  display: flex;
+  flex-direction: row;
+  width: 400px;
+  margin: auto;
+  justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+  }
+}
+.inputauth {
+  height: 30px;
+  width: 90%;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 10px;
+  font-size: 18px;
+  padding: 5px 10px;
+}
+.labelauth {
+  color: white;
+  display: block;
+  text-align: left;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.authLink {
+  position: absolute;
+  bottom: 0%;
+  text-align: center;
+  width: 100%;
+  color: white;
+  text-decoration: underline;
+  font-size: 18px;
+}
+.autherror {
+  position: absolute;
+  top: 9%;
+  text-align: center;
+  font-size: 16px;
+  background-color: #fdc7b1;
+  border: 3px solid #f0ad8d;
+  border-radius: 10px;
+  width: 80%;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 5px;
+  color: #d51818;
+  text-transform: uppercase;
+  display: none;
+}

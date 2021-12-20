@@ -1,0 +1,97 @@
+.quests {
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+  bottom: 100px;
+  width: 300px;
+}
+.questsContent {
+  background-image: url("../../assets/wood.jpg");
+  background-position: center;
+  background-repeat: round;
+  background-size: cover;
+  padding: 10px;
+  border-radius: 10px;
+  height: 300px;
+
+  @media only screen and (max-width: 768px) {
+    height: 206px;
+  }
+}
+.questsIcon {
+  margin-left: auto;
+  width: 60px;
+
+  @media only screen and (max-width: 768px) {
+    width: 40px;
+  }
+  transition: all 0.3s ease-out;
+}
+.questsList {
+  display: grid;
+  position: relative;
+  top: 10%;
+}
+.btnClaim {
+  position: absolute;
+  bottom: 10%;
+  width: 100%;
+  color: green !important;
+
+  @media only screen and (max-width: 768px) {
+    bottom: 0%;
+  }
+}
+.btnClaim.disabled {
+  position: absolute;
+  color: gray !important;
+}
+
+.simpleBarQuests {
+  padding-top: 50px;
+}
+.errorQuests {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 22px;
+}
+.quest {
+  height: 60px;
+  margin: 5px 10px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  color: white;
+}
+.questPercent {
+  position: relative;
+  left: -50px;
+}
+.questDetails {
+  margin-left: 15px;
+}
+.ModalOpen {
+  animation: openModal 0.4s ease-out forwards;
+}
+.ModalClosed {
+  animation: closeModal 0.4s ease-out forwards;
+}
+@keyframes openModal {
+  0% {
+    transform: translateX(-240px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes closeModal {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-240px);
+  }
+}

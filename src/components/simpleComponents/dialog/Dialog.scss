@@ -1,0 +1,15 @@
+.dialog {
+  background-color: #98582a99;
+  padding: 5px 50px;
+  border-radius: 15px;
+  color: white;
+}
+.dialogDimmer {
+  position: absolute;
+  z-index: 120;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}

@@ -1,0 +1,180 @@
+.square {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+@supports not (-moz-appearance: none) {
+  .square {
+    transform-style: preserve-3d;
+    filter: none !important;
+  }
+  .timercontainer {
+    filter: none !important;
+  }
+}
+
+.landPlot {
+  width: 120px;
+  height: 120px;
+  display: block;
+  height: auto;
+  transform: rotate(4deg);
+  position: relative;
+  z-index: -1;
+  min-height: 65px;
+  @media only screen and (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media only screen and (min-width: 1700px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.landPlotImg {
+  width: 120px;
+  height: 120px;
+  min-height: 65px;
+  @media only screen and (max-width: 768px) {
+    width: 60px;
+    height: 60px;
+  }
+  @media only screen and (min-width: 1700px) {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.timercontainer {
+  position: absolute;
+  z-index: 150;
+  transform: rotateZ(-50deg) rotateX(-53deg) translate(-50%, -50%);
+  right: -100%;
+  top: -100%;
+  text-shadow: 0px 0px 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transform-style: preserve-3d;
+  filter: drop-shadow(0px -120px 0px rgba(0, 0, 0, 0));
+}
+.hideTimer {
+  filter: none;
+  display: none;
+}
+.land4 {
+  width: 100px;
+  height: 100px;
+  @media only screen and (max-width: 768px) {
+    width: 60px;
+    height: 63px;
+  }
+  @media only screen and (min-width: 1700px) {
+    width: 100px;
+    height: 100px;
+  }
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.sign {
+  position: absolute;
+  z-index: 3;
+  transform: rotateZ(-45deg) rotateX(-15deg) translate(-50%, -60%);
+  right: -35%;
+  top: -10%;
+  @media only screen and (min-width: 1700px) {
+    right: -25%;
+    top: 10%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+.crack {
+  position: absolute;
+  max-width: 8vw;
+  width: 100%;
+  min-width: 65px;
+  height: auto;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.worm {
+  position: absolute;
+  z-index: 12;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+.land {
+  position: absolute;
+  z-index: 3;
+  transform: rotateZ(-50deg) rotateX(-60deg) translate(-50%, -50%);
+  right: -35%;
+  top: -10%;
+  @media only screen and (min-width: 1700px) {
+    right: -20%;
+    top: 0%;
+  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center;
+  transform-style: preserve-3d;
+}
+
+.landPlot:hover,
+.land:hover,
+.square:hover {
+  /* box-shadow: 0px 0px 60px rgba(121, 80, 234, 1); */
+  filter: drop-shadow(0px 0px 10px rgb(29, 139, 29));
+}
+
+.hervest {
+  position: absolute;
+  z-index: 4;
+  right: 0%;
+  transform: rotateZ(-50deg) rotateX(-53deg) translate3d(-50%, 10%, 0);
+  top: 10%;
+  font-size: 18px;
+  color: gold;
+  display: none;
+}
+
+.hervest.animationHarvest {
+  animation: animationH 1s ease-out forwards;
+  display: flex;
+}
+
+@keyframes animationH {
+  0% {
+    transform: rotateZ(-50deg) rotateX(-53deg) translate3d(-50%, 30%, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: rotateZ(-50deg) rotateX(-53deg) translate3d(-50%, -20%, 0);
+    opacity: 0;
+  }
+}
+
+.harvestPlantIcon {
+  width: 30px;
+  height: auto;
+}
+
+.harvestPlantProfit {
+  width: 40px;
+}

@@ -1,0 +1,46 @@
+.detailsPLant {
+  display: flex;
+  flex-direction: row;
+  width: max-content;
+  height: max-content;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: left;
+  backface-visibility: hidden;
+  @media only screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+.plantName {
+  font-size: 12px;
+  @media only screen and (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+.basicDetails {
+  text-align: center;
+}
+.otherDetails {
+  margin-top: 15px;
+  @media only screen and (max-width: 768px) {
+  }
+}
+.genesDetails {
+  width: 15px;
+  height: auto;
+  margin: 0 10px;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  @media only screen and (max-width: 768px) {
+    width: 10px;
+  }
+}
+.plantIcon {
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 30px;
+  height: auto;
+  @media only screen and (max-width: 768px) {
+    width: 20px;
+  }
+}

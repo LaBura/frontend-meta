@@ -1,0 +1,16 @@
+.landContainer {
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  width: max-content;
+  transform: rotateX(60deg) rotateY(0deg) rotateZ(44deg) translate(-95%, -15%);
+  transform-style: preserve-3d;
+}
+.miniLand {
+  width: max-content;
+  @supports not (-moz-appearance: none) {
+    transform-style: preserve-3d;
+  }
+  position: relative;
+  z-index: 1;
+}

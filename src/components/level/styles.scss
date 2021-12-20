@@ -1,0 +1,99 @@
+.containerLevel {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  left: 2%;
+  top: 2%;
+  height: 100px;
+  width: 250px;
+  @media only screen and (max-width: 768px) {
+    width: 180px;
+    height: 80px;
+  }
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.underBar {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50px;
+  top: 45px;
+}
+
+.underBarImg {
+  width: 150px;
+  height: 50px;
+  @media only screen and (max-width: 768px) {
+    width: 60px;
+    height: 20px;
+  }
+}
+.progressContainerLevel {
+  width: 100%;
+  height: fit-content;
+  position: absolute;
+  font-size: 14px;
+  top: 21px;
+  color: white;
+  left: 24px;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 13px;
+    top: 14px;
+    left: 13px;
+  }
+}
+.userAvatar {
+  width: 40px;
+  @media only screen and (max-width: 768px) {
+    width: 30px;
+  }
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  z-index: 1;
+  position: absolute;
+  left: 18px;
+  font-size: 22px;
+  top: 10px;
+}
+.idUser {
+  position: absolute;
+  left: 8px;
+  font-size: 14px;
+  top: 65px;
+  z-index: 1;
+  text-shadow: 0px 0px 2px #fff, 0 0 2px #fff, 0 0 2px #fff;
+  @media only screen and (max-width: 768px) {
+    font-size: 10px;
+  }
+}
+.boardIconsContainer {
+  position: absolute;
+  left: 100px;
+  top: 55px;
+  height: 20px;
+  @media only screen and (max-width: 768px) {
+    left: 75px;
+    top: 40px;
+    height: 15px;
+  }
+  z-index: 99;
+  justify-content: space-between;
+  display: flex;
+  width: 40%;
+}
+.boardIcons {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  @media only screen and (max-width: 768px) {
+    width: 15px;
+    height: 15px;
+  }
+}
